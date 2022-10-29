@@ -118,7 +118,7 @@ int main()
 		data = 100;
 	}
 	// if (0 && 100) 일경우 거짓 임으로 if 구문은 실행되지 않고 스킵한다.
-
+	/*
 	if (data == 100)
 	{
 		// if 가 참인 경우 수행
@@ -143,21 +143,61 @@ int main()
 	{
 		// 아무 조권도 걸리지 않을때 실행
 	}
+	*/
+	// 이때 하나의 조권이 해당하면 나머지 조권문은 실행되지 않는다.
+
+	// 상황에 따라서 else 를 사용하지 않아도 된다.
 
 	// if 문은 동시 에 실행을 할수 있다.
 	// 예로 들어 if 문법으로 W 를 눌러서 캐릭터를 앞으로 전진시킨다.
 	// else if 는 동시에 실행이 되지않기 때문에 if , if  문법으로 사용을 하면 D 를 누르는 순간 캐릭터는 대각선으로 이동을 할것이다.
 
-
-	// 
 	// switch case
-	// 
-	// 
-	// 
+	int iTest = 20;
+	switch (iTest)
+	{
+	case 10:
+
+		break;
+	case 20:
+		// iTest 가 20 이기때문에 case 20 를 실행
+		break; // break 를 넣지 않을경우 defal
+	default:
+
+		break;
+	}
+
+
+	int iTest = 10;
+	if (iTest = 10 || iTest == 20 || iTest == 30)// || 셋중 하나만 참일 경우 문법을 수행한다.
+	{
+
+	}
+	else if (iTest == 20)
+	{
+
+	}
+	
+	else
+	{
+
+	}
+	
 	// 삼형 연산자
 	// : ?
 
+	iTest == 20 ? iTest = 100 : iTest = 200;
+	// iTest 값이 20이 맞으면 100을 대입 아닐경우 200을 대입
 
+	//같은 의미
+	if (iTest == 20)
+	{
+		iTest = 100;
+	}
+	else
+	{
+		iTest = 200;
+	}
 
 	return 0;
 }
