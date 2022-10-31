@@ -25,7 +25,16 @@
 // 주석 
 // 설명 역활, 코드로 인식되지 않는다.
 
+// 전역변수
+int global = 0;
 
+int Add(int left, int right)// (int left, int right) 도 지역변수
+{
+	return left + right;
+}
+
+
+// 함수
 int main()
 {
 	// 자료형 (크기 단위, byte) Data Type
@@ -282,10 +291,36 @@ int main()
 	iStatus &= ~THIRSTY;
 	// 비트 곱을 실행시키기 전에 THIRSTY 를 반전 시킨다.
 
+	
 
 
+	// 변수
+	// 1. 지역변수 (함수 안에 있는 변수)
+	// 2. 전역변수 (함수 밖에 있는 변수)
+	// 3. 정적변수
+	// 4. 외부변수
 
 
+	// 지역변수
+	int iName = 0;
+	
+	// 괄호 안에 선언된 변수(함수, 지역)
+	{
+		// 변수명 규칙
+		int iName = 0; 
+		// 같은 지역 변수를 우선 순위로 선정한다.
+		iName;
+		{
+
+		}
+	}
+
+	iName = 100;
+
+
+	// 함수
+	data = Add(10, 20);
+	// 31번째줄 모듈로 계산
 
 
 
